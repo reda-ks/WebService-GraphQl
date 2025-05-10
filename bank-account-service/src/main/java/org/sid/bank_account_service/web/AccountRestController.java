@@ -34,7 +34,7 @@ public class AccountRestController {
     public BankAcccount updateAccount(@PathVariable String id,@RequestBody BankAcccount bankAcccount){
         BankAcccount account=bankAccountRepo.findById(id).orElseThrow();
         if (bankAcccount.getBalance()!=null) account.setBalance(bankAcccount.getBalance());
-        if (bankAcccount.getAccountType()!=null) account.setAccountType(bankAcccount.getAccountType());
+        if (bankAcccount.getType()!=null) account.setType(bankAcccount.getType());
         if (bankAcccount.getCurrency()!=null) account.setCurrency(bankAcccount.getCurrency());
         if (bankAcccount.getCreatedAt()!=null) account.setCreatedAt(bankAcccount.getCreatedAt());
         return bankAccountRepo.save(account);

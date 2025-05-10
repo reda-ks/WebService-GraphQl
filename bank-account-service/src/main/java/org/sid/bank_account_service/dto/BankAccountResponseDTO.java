@@ -18,5 +18,5 @@ public class BankAccountResponseDTO {
     private Date createdAt;
     private Double balance;
     private String currency;
-    private AccountType accountType;
+    private AccountType type;
 }

@@ -24,5 +24,5 @@ public class BankAcccount {
      private Double balance;
      private String currency;
      @Enumerated(EnumType.STRING)
-     private AccountType accountType;
+     private AccountType type;
 }

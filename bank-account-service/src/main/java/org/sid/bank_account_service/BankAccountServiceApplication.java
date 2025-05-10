@@ -23,7 +23,7 @@ public class BankAccountServiceApplication {
 			for(int i=0;i<10;i++){
 				BankAcccount bankAcccount=BankAcccount.builder()
 						.id((UUID.randomUUID().toString()))
-						.accountType(Math.random()>0.5? AccountType.CurrentAccount:AccountType.SaveAccount)
+						.type(Math.random()>0.5? AccountType.CurrentAccount:AccountType.SaveAccount)
 						.balance(10000+Math.random()*90000)
 						.createdAt(new Date())
 						.currency("MAD")

@@ -19,7 +19,7 @@ public class CustomDataFetcherExceptionResolver extends DataFetcherExceptionReso
         return new GraphQLError() {
             @Override
             public String getMessage() {
-                return "";
+                return ex.getMessage();
             }
 
             @Override
